@@ -1,0 +1,19 @@
+#!/usr/bin/env dotslash
+
+{
+  "name": "npm",
+  "platforms": {
+    "macos-x86_64": {
+      "size": 44695865,
+      "hash": "blake3",
+      "digest": "f5e6f2519f0182817a43376d2f171043560244ce1e7d14846b716c270f4f65e2",
+      "format": "tar.gz",
+      "path": "node-v21.6.2-darwin-x64/bin/npm",
+      "providers": [
+        {
+          "url": "https://nodejs.org/dist/v21.6.2/node-v21.6.2-darwin-x64.tar.gz"
+        }
+      ]
+    }
+  }
+}
