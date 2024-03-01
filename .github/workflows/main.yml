@@ -1,0 +1,19 @@
+name: main workflow (workflows/main.yaml)
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  run-tests:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu, macos, windows]
+    steps:
+      - uses: actions/checkout@v4
+      - run: |-
+          echo "hello"
+        shell:
+          bash
