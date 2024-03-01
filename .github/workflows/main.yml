@@ -20,5 +20,7 @@ jobs:
       - run: |-
           cd hello
           yarn add typescript --dev
+          yarn add eslint --dev
           yarn tsc
           yarn node ./dist/app.js
+          yarn eslint . --ext ts
