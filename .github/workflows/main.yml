@@ -15,5 +15,11 @@ jobs:
       - uses: actions/checkout@v4
       - uses: facebook/install-dotslash@latest
       - run: echo "PATH=$(pwd):$PATH" >> $GITHUB_ENV
+      - run: echo "The node.js toolchain, version $(node --version)"
       - run: |-
-          node --version
+          pushd "hello"
+          corepack enable
+          yarn add typescript --dev
+          yarn tsc
+          yarn node ./dist/app.js
+          popd
