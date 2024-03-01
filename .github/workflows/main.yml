@@ -19,8 +19,9 @@ jobs:
       - run: sudo npm install -g yarn
       - run: |-
           cd hello
-          yarn add typescript --dev
-          yarn add eslint --dev
+          # yarn add typescript --dev
+          # yarn add eslint --dev
+          yarn install
           yarn tsc
           yarn node ./dist/app.js
           yarn eslint . --ext ts
