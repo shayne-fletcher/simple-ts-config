@@ -1,0 +1,9 @@
+node_modules
+dist
+package
+**/yarn.lock
+**/package.json
+yarnpkg
+yarn
+pnpm
+pnpx
