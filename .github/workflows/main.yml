@@ -13,7 +13,7 @@ jobs:
         os: [ubuntu, macos, windows]
     steps:
       - uses: actions/checkout@v4
+      - uses: facebook/install-dotslash@latest
+      - run: echo "PATH=$(pwd):$PATH" >> $GITHUB_ENV
       - run: |-
-          echo "hello"
-        shell:
-          bash
+          node --version
