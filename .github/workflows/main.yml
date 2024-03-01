@@ -22,4 +22,3 @@ jobs:
           yarn add typescript --dev
           yarn tsc
           yarn node ./dist/app.js
-          popd
