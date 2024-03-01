@@ -10,10 +10,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu, macos, windows]
+        os: [ubuntu, macos]
     steps:
       - uses: actions/checkout@v4
+      - uses: facebook/install-dotslash@latest
+      - run: echo "PATH=$(pwd):$PATH" >> $GITHUB_ENV
       - run: |-
-          echo "hello"
-        shell:
-          bash
+          node --version
