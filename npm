@@ -4,14 +4,14 @@
   "name": "npm",
   "platforms": {
     "linux-x86_64": {
-      "size": 23116958,
+      "size": 47883840,
       "hash": "blake3",
-      "digest": "be5b102045b119d9a121edbc686c8c67a745ded3b8f4580647e6a3e7aca0aa65",
+      "digest": "be2b87a2cfc7a71e4d25fae57667bff809b8abb0c63293dc1177e67e019fc039",
       "format": "tar.gz",
-      "path": "node-v12.16.2-linux-x64/bin/npm",
+      "path": "node-v21.6.2-linux-x64/bin/npm",
       "providers": [
         {
-        "url": "https://nodejs.org/dist/v12.16.2/node-v12.16.2-linux-x64.tar.gz"
+          "url": "https://nodejs.org/dist/v21.6.2/node-v21.6.2-linux-x64.tar.gz"
         }
       ]
     },
