@@ -3,7 +3,8 @@
     "target": "es5",   // Adjust the target ECMAScript version if needed
     "module": "commonjs", // Adjust the module system if needed
     "strict": true,     // Enable strict mode for type safety
-    "outDir": "dist"    // Output directory for compiled JavaScript files (optional)
+    "outDir": "dist",    // Output directory for compiled JavaScript files (optional)
+    "declaration": true,
   },
   "include": ["src"] // Folder containing your TypeScript source files (optional)
 }
