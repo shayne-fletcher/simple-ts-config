@@ -16,9 +16,9 @@ jobs:
       - uses: facebook/install-dotslash@latest
       - run: echo "PATH=$(pwd):$PATH" >> $GITHUB_ENV
       - run: echo "The node.js toolchain, version $(node --version)"
+      - run: npm install --global yarn
       - run: |-
-          pushd "hello"
-          corepack enable
+          cd hello
           yarn add typescript --dev
           yarn tsc
           yarn node ./dist/app.js
