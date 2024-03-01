@@ -1,4 +1,4 @@
-name: main workflow (workflows/main.yaml)
+name: main
 on:
   push:
   pull_request:
