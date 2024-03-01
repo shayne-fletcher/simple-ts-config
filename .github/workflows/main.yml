@@ -10,10 +10,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu, macos, windows]
+        os: [ubuntu, macos]
     steps:
       - uses: actions/checkout@v4
+      - uses: facebook/install-dotslash@latest
+      - run: echo "PATH=$(pwd):$PATH" >> $GITHUB_ENV
+      - run: echo "The node.js toolchain, version $(node --version)"
+      - run: sudo npm install -g yarn
       - run: |-
-          echo "hello"
-        shell:
-          bash
+          cd hello
+          yarn add typescript --dev
+          yarn tsc
+          yarn node ./dist/app.js
